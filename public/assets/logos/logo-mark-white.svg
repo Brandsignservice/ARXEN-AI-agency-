@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none">
+  
+  <g id="arxen-mark" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer Link Plates Left -->
+    <path d="M 120 36 L 72 96" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 72 96 L 44 148" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 44 148 L 66 190" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    
+    <!-- Inner Link Plates Left -->
+    <path d="M 66 190 L 96 148" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 96 148 L 82 100" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Outer Link Plates Right (Mirrored) -->
+    <path d="M 120 36 L 168 96" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 168 96 L 196 148" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 196 148 L 174 190" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    
+    <!-- Inner Link Plates Right -->
+    <path d="M 174 190 L 144 148" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 144 148 L 158 100" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Left Joints (Pivot Bosses & Holes) -->
+    <circle cx="72" cy="96" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="72" cy="96" r="5" fill="#080a0a"/>
+
+    <circle cx="44" cy="148" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="44" cy="148" r="5" fill="#080a0a"/>
+
+    <circle cx="66" cy="190" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="66" cy="190" r="5" fill="#080a0a"/>
+
+    <circle cx="96" cy="148" r="12" fill="#080a0a" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="96" cy="148" r="4.5" fill="#080a0a"/>
+
+    <!-- Right Joints (Pivot Bosses & Holes) -->
+    <circle cx="168" cy="96" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="168" cy="96" r="5" fill="#080a0a"/>
+
+    <circle cx="196" cy="148" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="196" cy="148" r="5" fill="#080a0a"/>
+
+    <circle cx="174" cy="190" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="174" cy="190" r="5" fill="#080a0a"/>
+
+    <circle cx="144" cy="148" r="12" fill="#080a0a" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="144" cy="148" r="4.5" fill="#080a0a"/>
+
+    <!-- Apex Main Joint Pivot -->
+    <circle cx="120" cy="36" r="17" fill="#080a0a" stroke="#ffffff" stroke-width="6"/>
+    <circle cx="120" cy="36" r="7.5" fill="#92fb9e" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="120" cy="36" r="2.5" fill="#080a0a"/>
+  </g>
+</svg>

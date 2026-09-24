@@ -1,0 +1,7 @@
+{
+  "name": "ARXEN — AI Systems",
+  "description": "Infrastructure for intelligence. Arxen AI specializes in AI Website & App Development, AI Automation (n8n, Make.com, Zapier), and AI Agents & Chatbots.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

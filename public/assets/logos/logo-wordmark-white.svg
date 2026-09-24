@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" width="720" height="180" fill="none">
+  <!-- Mark -->
+  <g transform="translate(10, 10) scale(0.68)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 120 36 L 72 96" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 72 96 L 44 148" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 44 148 L 66 190" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    
+    <path d="M 66 190 L 96 148" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 96 148 L 82 100" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+
+    <path d="M 120 36 L 168 96" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 168 96 L 196 148" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 196 148 L 174 190" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+    
+    <path d="M 174 190 L 144 148" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <path d="M 144 148 L 158 100" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+
+    <circle cx="72" cy="96" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="72" cy="96" r="5" fill="#080a0a"/>
+    <circle cx="44" cy="148" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="44" cy="148" r="5" fill="#080a0a"/>
+    <circle cx="66" cy="190" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="66" cy="190" r="5" fill="#080a0a"/>
+    <circle cx="96" cy="148" r="12" fill="#080a0a" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="96" cy="148" r="4.5" fill="#080a0a"/>
+
+    <circle cx="168" cy="96" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="168" cy="96" r="5" fill="#080a0a"/>
+    <circle cx="196" cy="148" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="196" cy="148" r="5" fill="#080a0a"/>
+    <circle cx="174" cy="190" r="14" fill="#080a0a" stroke="#ffffff" stroke-width="5.5"/>
+    <circle cx="174" cy="190" r="5" fill="#080a0a"/>
+    <circle cx="144" cy="148" r="12" fill="#080a0a" stroke="#ffffff" stroke-width="5"/>
+    <circle cx="144" cy="148" r="4.5" fill="#080a0a"/>
+
+    <circle cx="120" cy="36" r="17" fill="#080a0a" stroke="#ffffff" stroke-width="6"/>
+    <circle cx="120" cy="36" r="7.5" fill="#92fb9e" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="120" cy="36" r="2.5" fill="#080a0a"/>
+  </g>
+
+  <!-- Clean Precision Vector Glyph Paths for ARXEN -->
+  <g transform="translate(190, 34)" fill="#ffffff">
+    <!-- A -->
+    <path d="M 45 78 L 33 78 L 27 60 L 9 60 L 3 78 L -9 78 L 12 18 L 24 18 Z M 18 31 L 12 50 L 24 50 Z" transform="translate(15,0)"/>
+    <!-- R -->
+    <path d="M 68 18 L 98 18 C 111 18 119 25 119 36 C 119 44 113 50 105 53 L 122 78 L 108 78 L 93 55 L 80 55 L 80 78 L 68 78 Z M 80 28 L 80 45 L 97 45 C 104 45 107 42 107 36.5 C 107 31 104 28 97 28 Z"/>
+    <!-- X -->
+    <path d="M 130 18 L 144 18 L 158 45 L 172 18 L 186 18 L 166 48 L 187 78 L 173 78 L 158 52 L 143 78 L 129 78 L 150 48 Z"/>
+    <!-- E -->
+    <path d="M 198 18 L 235 18 L 235 28 L 210 28 L 210 42 L 232 42 L 232 52 L 210 52 L 210 68 L 236 68 L 236 78 L 198 78 Z"/>
+    <!-- N -->
+    <path d="M 248 18 L 260 18 L 285 57 L 285 18 L 297 18 L 297 78 L 285 78 L 260 39 L 260 78 L 248 78 Z"/>
+  </g>
+
+  <!-- Subtitle: AI SYSTEMS -->
+  <g transform="translate(206, 126)" fill="#ffffff" opacity="0.88">
+    <text font-family="'DM Mono', 'Space Grotesk', -apple-system, sans-serif" font-size="19" font-weight="600" letter-spacing="10px">AI SYSTEMS</text>
+  </g>
+</svg>
