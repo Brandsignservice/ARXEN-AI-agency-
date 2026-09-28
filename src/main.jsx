@@ -25,6 +25,56 @@ const LOGO_WORDMARK_SVG = '/assets/logos/logo-wordmark-white.svg'
 const LOGO_WORDMARK_PNG = '/assets/logos/logo-wordmark-white.png'
 const LOGO_MARK_SVG = '/assets/logos/logo-mark-white.svg'
 
+// Official ARXEN Contact & Social Media Information
+const CONTACT_EMAIL = 'arxenaiservices@gmail.com'
+
+const SOCIAL_LINKS = {
+  instagram: 'https://www.instagram.com/arxenai?stkn=enA4dmVobXo4bDV2',
+  linkedin: 'https://www.linkedin.com/in/rifat-kai-50a211390?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+}
+
+function InstagramIcon({ size = 16, className = '' }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  )
+}
+
+function LinkedInIcon({ size = 16, className = '' }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  )
+}
+
 function Logo({ compact = false, footer = false }) {
   const [imgSrc, setImgSrc] = useState(LOGO_WORDMARK_SVG)
 
@@ -74,6 +124,28 @@ function Navbar({ onMenu }) {
         <a className="nav-cta" href="#contact">
           Start a conversation <ArrowUpRight size={15} strokeWidth={1.6} />
         </a>
+        <div className="nav-socials" aria-label="Official Social Channels">
+          <a
+            href={SOCIAL_LINKS.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-social-btn"
+            title="ARXEN on Instagram (@arxenai)"
+            aria-label="Instagram"
+          >
+            <InstagramIcon size={14} />
+          </a>
+          <a
+            href={SOCIAL_LINKS.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-social-btn"
+            title="ARXEN / Rifat Kai on LinkedIn"
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon size={14} />
+          </a>
+        </div>
         <button className="menu-trigger" aria-label="Open menu" onClick={onMenu}>
           <Menu size={23} />
         </button>
@@ -101,6 +173,31 @@ function MobileMenu({ open, onClose }) {
       <a className="mobile-menu-contact" href="#contact" onClick={onClose}>
         Start a conversation <ArrowUpRight size={16} />
       </a>
+      <div className="mobile-social-box">
+        <span className="mobile-social-title">Connect with us</span>
+        <div className="mobile-social-list">
+          <a
+            href={SOCIAL_LINKS.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-social-item"
+            onClick={onClose}
+          >
+            <span><InstagramIcon size={16} /> Instagram (@arxenai)</span>
+            <ArrowUpRight size={14} />
+          </a>
+          <a
+            href={SOCIAL_LINKS.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-social-item"
+            onClick={onClose}
+          >
+            <span><LinkedInIcon size={16} /> LinkedIn (Rifat Kai)</span>
+            <ArrowUpRight size={14} />
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
@@ -445,7 +542,7 @@ function Contact({ selectedService, setSelectedService }) {
     // Open email client with pre-filled content
     const subject = encodeURIComponent(`Inquiry: ${selectedService || 'AI Systems'} - ${name || 'Prospective Client'}`)
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterested Service: ${selectedService}\n\nProject Details:\n${message}`)
-    window.location.href = `mailto:hello@arxen.ai?subject=${subject}&body=${body}`
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
     setSubmitted(true)
   }
 
@@ -511,9 +608,48 @@ function Contact({ selectedService, setSelectedService }) {
           <p>
             Tell us where you want to go. Whether you need a full-scale AI application, end-to-end workflow automation with n8n/Make/Zapier, or custom conversational AI agents, we'll architect the exact system.
           </p>
-          <a className="button button-primary" href="mailto:hello@arxen.ai">
-            Direct Email <ArrowUpRight size={17} />
+          <a className="button button-primary" href={`mailto:${CONTACT_EMAIL}`}>
+            Email: {CONTACT_EMAIL} <ArrowUpRight size={17} />
           </a>
+          <div className="contact-social-block">
+            <span className="contact-social-label">Connect Directly:</span>
+            <div className="contact-social-grid">
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-channel-card"
+              >
+                <div className="channel-left">
+                  <div className="channel-icon">
+                    <InstagramIcon size={16} />
+                  </div>
+                  <div>
+                    <div className="channel-title">Instagram</div>
+                    <span className="channel-handle">@arxenai</span>
+                  </div>
+                </div>
+                <ArrowUpRight size={16} className="channel-arrow" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-channel-card"
+              >
+                <div className="channel-left">
+                  <div className="channel-icon">
+                    <LinkedInIcon size={16} />
+                  </div>
+                  <div>
+                    <div className="channel-title">LinkedIn</div>
+                    <span className="channel-handle">Rifat Kai • ARXEN AI</span>
+                  </div>
+                </div>
+                <ArrowUpRight size={16} className="channel-arrow" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -530,6 +666,28 @@ function Footer() {
             Infrastructure<br />
             for intelligence.
           </p>
+          <div className="footer-social-icons">
+            <a
+              href={SOCIAL_LINKS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-social-btn"
+              title="Instagram @arxenai"
+              aria-label="Instagram"
+            >
+              <InstagramIcon size={16} />
+            </a>
+            <a
+              href={SOCIAL_LINKS.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-social-btn"
+              title="LinkedIn Rifat Kai"
+              aria-label="LinkedIn"
+            >
+              <LinkedInIcon size={16} />
+            </a>
+          </div>
         </div>
         <div className="footer-links">
           <div>
@@ -546,17 +704,51 @@ function Footer() {
           </div>
           <div>
             <span>CONNECT</span>
-            <a href="mailto:hello@arxen.ai">Email us</a>
-            <a href="#contact">Inquire</a>
+            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            <a href="#contact">Project Inquiry</a>
+            <a
+              href={SOCIAL_LINKS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link-with-icon"
+            >
+              <InstagramIcon size={12} /> Instagram
+            </a>
+            <a
+              href={SOCIAL_LINKS.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link-with-icon"
+            >
+              <LinkedInIcon size={12} /> LinkedIn
+            </a>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
         <span>© 2024 ARXEN AI SYSTEMS</span>
         <span>INFRASTRUCTURE FOR INTELLIGENCE</span>
-        <a href="#top">
-          Back to top <ChevronRight size={14} />
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '22px' }}>
+          <a
+            href={SOCIAL_LINKS.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#8c9890', display: 'flex', alignItems: 'center', gap: '6px' }}
+          >
+            <InstagramIcon size={12} /> Instagram
+          </a>
+          <a
+            href={SOCIAL_LINKS.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#8c9890', display: 'flex', alignItems: 'center', gap: '6px' }}
+          >
+            <LinkedInIcon size={12} /> LinkedIn
+          </a>
+          <a href="#top">
+            Back to top <ChevronRight size={14} />
+          </a>
+        </div>
       </div>
     </footer>
   )
